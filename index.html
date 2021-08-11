@@ -125,28 +125,29 @@
                   <div class="col-6">
 
                     <img src="https://github.com/jjosegallegocesde/imagenes-amazon/blob/main/img/fotoCarrito.PNG?raw=true" alt="fotocarrito" class="img-fluid" id="fotoCarrito">
+                    <hr class="invisible" id="hr1">
                     <p id="pesoTotalCarrito"></p>
                     <p id="costoCasillero" class="fw-bold"></p>
-                    
-
+                    <div class="d-grid gap-2">
+                      <button type="button" class="btn btn-dark invisible" id="cop">COP<i class="ms-2 fas fa-ticket-alt"></i></button>
+                    </div>
+                    <p id="costoPesos"></p>
                   </div>
                   <div class="col-6">
-
                     <h5 id="tituloCarrito">Tu Carrito de Amazon está vacío</h5>
                     <p id="precioUnitarioCarrito"></p>
                     <p id="pesoUnitarioCarrito"></p>
                     <p id="impuestos"></p>
-                    <hr>
-                    <p id="costoTotal" class="fw-bold text-sucess"></p>
-
-
+                    <hr class="invisible" id="hr2">
+                    <p id="costoTotal" class="fw-bold text-success"></p>
+                    
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn fondo" id="botonLimpiar">Limpiar</button>
-              <button type="button" class="btn btn-primary">Comprar</button>
+              <button type="button" class="btn fondo" id="botonLimpiar">Limpiar<i class="ms-2 fas fa-trash-alt"></i></button>
+              <button type="button" class="btn btn-dark">Comprar</button>
             </div>
           </div>
         </div>
