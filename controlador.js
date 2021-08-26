@@ -14,7 +14,6 @@ boton.addEventListener("click", capturarDatos); //callback
 botonLimpiar.addEventListener("click", limpiarCarrito);
 botonCop.addEventListener("click", conversion);
 
-
  //
 function capturarDatos(){
      
@@ -68,7 +67,7 @@ function capturarDatos(){
 }
 
 function conversion(){
-    moneda=false;
+    moneda=true;
     let botonCop=document.getElementById("cop");
     botonCop.textContent="COP ($)"
 
@@ -76,7 +75,6 @@ function conversion(){
 
     let precioIndividual=document.getElementById("precioUnitarioCarrito");
     precioIndividual.textContent=`Valor unidad: $${convertirDolares(precioProducto)}COP`;
-    console.log(precioIndividual);
 
     let casillero=document.getElementById("costoCasillero");
     casillero.textContent=`Valor Casillero: $${convertirDolares(calcularCostoCasillero(pesoProducto,cantidad))}COP`;
@@ -87,12 +85,12 @@ function conversion(){
     let costoTotal=document.getElementById("costoTotal");
     costoTotal.textContent=`Valor en pesos: $${convertirDolares((calcularCostoCasillero(pesoProducto,cantidad))+(calcularCostoImpuestos(precioProducto,cantidad)))}COP`;
 
-    botonCop.classList.remove("visible");
-    botonCop.classList.add("invisible");
+    /*botonCop.classList.remove("visible");
+    botonCop.classList.add("invisible");*/
 }
     
 function conversionDolar(){
-    moneda=true;
+    moneda=false;
     let botonCop=document.getElementById("cop");
     botonCop.textContent="USD ($)"
     console.log("entré al dolar");
