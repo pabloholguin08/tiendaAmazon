@@ -69,7 +69,7 @@ function capturarDatos(){
 function conversion(){
     moneda=true;
     let botonCop=document.getElementById("cop");
-    botonCop.textContent="COP ($)"
+    botonCop.textContent="USD ($)"
 
     let cantidad=document.getElementById("cantidad").value;
 
@@ -92,7 +92,7 @@ function conversion(){
 function conversionDolar(){
     moneda=false;
     let botonCop=document.getElementById("cop");
-    botonCop.textContent="USD ($)"
+    botonCop.textContent="COP ($)"
     console.log("entré al dolar");
     let cantidad=document.getElementById("cantidad").value;
 
