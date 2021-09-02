@@ -58,10 +58,10 @@ pedidos.forEach(function(pedido){
 
     let imagen=document.createElement("img");
     imagen.classList.add("card-img-top");
-    imagen.classList.add("img-fluid");
-    imagen.classList.add("d-block");
-    imagen.classList.add("w-100")
+    
+    imagen.height="400";
     imagen.src=pedido.foto;
+    
 
     let torzo=document.createElement("div");
     torzo.classList.add("card-body");
